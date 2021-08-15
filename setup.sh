@@ -1,7 +1,8 @@
-HOME=/Users/elijah/Code/DissCode/LMEDS/
-FIGS=/Users/elijah/Code/DissCode/Plots/
+HOME=/Users/elijah/Code/DissCode/RPT-TTS/ # change this
+FIGS=/Users/elijah/Code/DissCode/Plots/ # change this
+EXP=${HOME}tests/rpt_tts_demo/ # chage this
 TESTS=${HOME}tests/
 USERSCR=${HOME}lmeds/user_scripts/
-PILOT=${HOME}tests/pilot_experiment/
-AUDIO=${HOME}tests/pilot_experiment/audio_and_video/
-PROSODY=${HOME}tests/prosody_experiment/
+
+export FIGS
+export TESTS
