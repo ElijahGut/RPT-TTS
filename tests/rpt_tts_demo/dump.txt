@@ -1,0 +1,71 @@
+text_page audio_list_instructions
+media_list audio 1 1 1 [water apples water]
+
+text_page same_different_instructions
+media_choice same_different_instr audio 0.5 1 -1 [[water apples]] [same different]
+media_choice same_different_instr audio 0.5 1 2 [[water] [apples]] [same different]
+
+text_page video_ok
+media_choice prominence_video_instr video 0.5 1 -1 [[syllables_video]] [vnonprom nonprominent neutral prominent vprom]
+
+text_page fill_in_the_blank_instructions
+media_choice fill_in_the_blank_instruct audio 0.5 -1 -1 [[]] [polluted cold not_drinkable] transcriptList=[water_blank] timeout=10
+
+text_page boundary_and_prominence_mechanics_instructions
+text_page boundary_and_prominence_nonspecific_instructions
+boundary_and_prominence apples apples 2 2 nonspecific_boundary_instr nonspecific_prominence_instr true
+
+text_page boundary_and_prominence_constrained_instructions
+boundary apples apples 1 -1 nonspecific_boundary_instr true
+prominence apples apples 1 -1 nonspecific_prominence_instr true
+syllable_marking syllables syllables 1 -1 nonspecific_syllables true syllableDemarcator=.
+
+text_page boundary_and_prominence_with_limits
+prominence apples apples -1 -1 prominence_at_least_two true minNumSelected=2
+boundary apples apples -1 -1 boundary_at_most_one true maxNumSelected=1
+boundary_and_prominence apples apples -1 -1 mark_one_boundary mark_one_prominence true minNumSelected=1 maxNumSelected=1
+
+text_page keyboard_shortcuts
+boundary_and_prominence apples apples -1 -1 keyboard_shortcuts_boundary keyboard_shortcuts_prominence true bindPlayKeyID=p bindSubmitID=enter
+media_choice one_play_two_response audio 0.5 1 -1 [[water apples]] [same different] bindPlayKeyIDList=p bindResponseKeyIDList=[z m]
+media_choice two_play_two_response audio 0.5 1 2 [[water] [apples]] [same different] bindPlayKeyIDList=[q p] bindResponseKeyIDList=[z m]
+
+text_page boundary_and_prominence_alternatives
+media_choice prominence_point_instr audio 0.5 1 -1 [[water]]  [vnonprom nonprominent neutral prominent vprom] transcriptList=[water_word]
+media_slider prominence_scale_instr audio 1 -1 water water_word 0 100 leftRangeLabel=nonprominent rightRangeLabel=prominent
+
+
+--- PILOT BOILERPLATE --- 
+
+*PILOT_experiment
+login
+
+text_page first_page bindSubmitKeyIDList=space
+media_test audio apples
+
+text_page speed_warning
+text_page remote_experiment_notice
+
+consent demo_consent
+
+text_page presurvey_instructions
+survey presurvey
+
+text_page mark_error_instructions
+
+prominence apples apples 1 2 error_marker_reminder bindPlayKeyID=space
+survey mock_questions
+
+text_page first_page bindSubmitKeyIDList=enter
+text_page error_marker_instructions
+
+prominence libri_isolated_21_tac libri_isolated_21 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_22_tac libri_isolated_22 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_23_tac libri_isolated_23 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_24_tac libri_isolated_24 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_25_tac libri_isolated_25 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_26_tac libri_isolated_26 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_27_tac libri_isolated_27 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_28_tac libri_isolated_28 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_29_tac libri_isolated_29 1 2 error_marker_reminder mock_questions bindPlayKeyID=space
+prominence libri_isolated_30_tac libri_isolated_30 1 2 error_marker_reminder mock_questions bindPlayKeyID=space

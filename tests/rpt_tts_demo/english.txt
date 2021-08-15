@@ -1,0 +1,766 @@
+
+=============
+polluted
+=============
+
+polluted
+
+=============
+cold
+=============
+
+cold
+
+=============
+not_drinkable
+=============
+
+not drinkable
+
+------------------------------
+lmeds_interface
+------------------------------
+
+====================
+loading_progress
+====================
+
+Loading.  Please wait.
+
+====================
+metadata_description
+====================
+
+A demonstration of the kinds of pages that can be presented to subjects via LMEDS.
+
+====================
+progress
+====================
+
+Progress
+
+------------------------------
+text_page
+------------------------------
+
+====================
+audio_list_instructions
+====================
+
+On the next page you'll listen to a list of audio files separated by a brief pause.
+
+====================
+boundary_and_prominence_alternatives
+====================
+
+Although LMEDS was originally developed for collecting RPT annotations such as in the previous pages, there are other ways that one can use LMEDS to collect prosody annotations, as shown with the next two pages.
+
+====================
+boundary_and_prominence_constrained_instructions
+====================
+
+On the next page you'll perform a similar annotation task as before.  This time however, you will listen to the audio exactly twice before moving on.  Also, you will not be able to see the boundary markings you make during the first half of the task.
+
+====================
+boundary_and_prominence_mechanics_instructions
+====================
+
+<p style="text-align:center;font-weight: bold; text-decoration: underline;">
+Experimental Procedure
+</p>
+
+You will be annotating excerpts of recorded conversations.  Each page contains the transcript for the excerpt and may also contain the audio recording.  For each excerpt, you will complete two tasks.  First you will break the text into smaller sequences of words.  Second, you will mark certain words.<br /><br />
+
+In the first task, based on some criteria (see next page) you will select a word and a vertical bar will be appear after that word:<br /><br />
+word word <b>word</b> | word word ...<br /><br /> 
+
+If you change your mind after selecting a word, just select it again and the bar will disappear. In each utterance, you will be able to select as many words that match the necessary criteria. When you have finished, click 'submit'. This will transition you to the next task. <br /><br />
+
+In the <b>second task</b> you will again select words (based on different criteria—see next page), however, this time, once you select a word its color will change to red:<br /><br />
+word word <font color="red">word</font> word ...<br /><br />
+
+If you change your mind, just select the word again and it will revert back to black.   During this phase, you will see where you marked the boundaries from the earlier task. When you are finished click <b>submit</b> to move on to the next excerpt.
+
+====================
+boundary_and_prominence_nonspecific_instructions
+====================
+
+As instructed previously, for each audio file, you will conduct two tasks. <br /><br />
+
+In normal speech, speakers group words in a way that helps listeners interpret the utterance. <br /><br />
+
+In the <b>first task</b>, break the text into chunks that reflect this grouping. <br /><br />
+
+In normal speech, speakers pronounce some word or words in a sentence with more prominence than others. The prominent words are in a sense highlighted for the listener, and stand out from other non-prominent words.  <br /><br />
+
+In the <b>second task</b>, mark words that you hear as prominent in this way. <br /><br />
+
+There are <b>sixteen audio excerpts</b>.  Please use the second playback to review your work.  You will <b>not</b> be able to listen to the audio more than twice.
+
+====================
+boundary_and_prominence_randomized_instructions
+====================
+
+On the next few pages are randomized boundary and prominence pages.
+<br /><br />
+Mark the boundaries you hear based on pauses in the speech (there aren't
+really any pauses in these short recordings though) and mark the prominences
+based on the words you think stand out.
+
+====================
+boundary_and_prominence_with_limits
+====================
+
+The next few pages contain more prominence and boundary pages.  However,
+on these pages, you'll be limited in the number of items you can select.
+Specific instructions will be given for each page.
+
+====================
+error_marker_instructions
+====================
+
+On each page, you will judge synthesised audio.
+Listen carefully to the audio and mark the points in the dialogue where the speaker's intonation sounds incorrect or particularly unnatural.
+<br /> <br />
+By <b>intonation</b>, I mean the 'pitch' or 'melody' of the speaker's speech. 
+For instance, questions typically have rising intonation whereas declarative sentences have falling intonation. 
+Note that intonation errors do not have to occur at the end of an utterance!
+<br /><br />
+<b>You can mark the dialogue by clicking on a word. When you click on a word, it will turn <span style='color: red'>red</span>. 
+You can then click the word again to remove the mark if you wish.
+You'll be able to play the audio up to three times to adjust or confirm the marks you made.</b> 
+<br /><br />
+After listening to the audio, you'll be provided with some potential reasons why you decided to mark your errors. Tick the ones that apply, or provide your own brief reason in the 'Other' box.
+You can then use the slider provided to rate how natural you think the speaker sounds on a scale from 1 to 5. 
+<br /><br />
+In the following three pages, you can play some audio files to get an idea of the kind of errors you should look for and familiarise yourself with the task.
+
+====================
+error_marker_instructions_2
+====================
+
+Now that you have familiarised yourself with the task, you can begin the main experiment. 
+<br /><br />
+The task should take around 20 minutes to complete. Good luck!
+
+====================
+fill_in_the_blank_instructions
+====================
+
+On the next page, please select the word that appears in the audio given.
+<br /><br />
+In LMEDS, it is possible to set a timer.  If the timer expires, the item is
+automatically marked as incomplete and LMEDS progresses to the next page.
+<b>The next page has a 10 second timer</b>.
+
+====================
+first_page
+====================
+
+Welcome to a demonstration of LMEDS functionality.  The stimuli items that will
+be presented were simplified for this experiment but the instructions are all 
+appropriate for the tasks.  <br /><br />
+
+Before each task, you'll be presented with some explanatory text.  The next few slides
+contain information we give to subjects participating from remote places.  Then there
+is a consent form, and a demographics survey.<br /><br />
+
+This demo should only take about 5 minutes to complete.
+
+====================
+keyboard_shortcuts
+====================
+
+On the next page there is a boundary and prominence page followed by 
+a media choice page, as you have seen before.  However,
+these pages have been configured to allow interaction via a keyboard.
+Specific instructions will be given for each page.
+
+
+====================
+multingual_support
+====================
+
+Before continuing, note that LMEDS is multilingual. (translations provided by google translate).<br /><br />
+続行する前に、LMEDS推定は、多言語であることに注意<br /><br />
+Avant de continuer, notez que LMEDS est multilingue<br /><br />
+जारी रखने से पहले, LMEDS बहुभाषी है कि ध्यान दें<br /><br />
+
+====================
+post_survey_instructions
+====================
+
+The next page features an actual post-experiment survey used in past studies conducted
+over LMEDS.
+
+====================
+presurvey_instructions
+====================
+
+On the next page you'll fill out a demographics page.  These questions are derived
+from actual demographics surveys conducted over LMEDS.<br /><br />
+
+Note that you may skip as many items as you want.
+
+====================
+randomized_demo_introduction
+====================
+
+This is a short LMEDS sample experiment meant to demonstrate the randomization feature.
+<br /><br />
+Please read the user manual for more information about how to randomize the presentation
+order of stimuli to users.
+
+====================
+remote_experiment_notice
+====================
+
+Before you begin the following experiment, please take note of the following points.
+<br /><br />
+
+<b>1)</b> Please <b>read all instructions</b> that appear throughout this experiment carefully.  Do not skip or skim instructions.<br /><br />
+
+<b>2)</b> Please <b>wear headphones or earbuds</b> when listening to audio files.
+<br /><br />
+
+<b>3)</b> <b>You should be in a quiet room</b>, free from distraction for the duration of the experiment.  If there is significant background noise, such as in a cafe or other public area, you may have trouble listening to audio files and concentrating on the experiment.
+<br /><br />
+
+<b>4)</b> Please <b>silence or turn off your cell-phone</b> and other noise-making electronics.
+<br /><br />
+
+<b>5)</b> Please <b>close all other browser windows or tabs</b>--particularly those that issue auditory or visual alerts or status updates such as email providers or social networking websites.
+<br /><br />
+
+<b>6)</b> Unless instructed otherwise, please <b>do not perform other tasks</b> or otherwise stray from the current task while you are doing the experiment.
+<br /><br />
+
+<br />
+
+By clicking 'Continue' you acknowledge that you will follow these to the best of your ability.
+
+====================
+same_different_instructions
+====================
+
+On the next page, you will hear two audio files.  Please press the appropriate button
+to indicate whether they are the same or different.
+
+====================
+same_different_randomized_instructions
+====================
+
+On the next few pages are a few same-different questions.  The order of the test items is randomized.
+
+====================
+sliders_in_surveys
+====================
+
+Sliders can also be used in surveys.
+
+====================
+speed_warning
+====================
+
+Please note that your browser must be Google Chrome and your internet speed must be fast to complete
+this task, which involves listening to large audio files.<br /><br />
+
+====================
+video_ok
+====================
+
+LMEDS can also play use video.  Any pages shown with audio files can have the audio replaced with video, as demonstrated next.
+
+====================
+whats_new_in_2.3
+====================
+
+LMEDS 2.3 has several new features.  Showcased here are the new kinds of pages that can be crafted in LMEDS 2.3.
+These pages are included in the full demo, but for those just wanting to see the new stuff, this demo is for you.<br /><br />
+
+New Features<br /><br />
+
+<ul>
+<li>Video now supported with the same controls and functionality as audio</li>
+<li>Sliding scales are now a supported widget
+<li>New syllable-marking page (branch of prominence-marking pages)
+</ul>
+
+------------------------------
+media_test
+------------------------------
+
+====================
+error_verify_media
+====================
+
+You must mark one of the choices before you continue
+
+====================
+mediaTest_affirm
+====================
+
+I can hear the audio
+
+====================
+mediaTest_reject
+====================
+
+I cannot hear the audio
+
+====================
+mediaTest_text
+====================
+
+Please listen to the sound file and indicate whether or not you can hear it.
+<br /><br />
+
+You may also use this time to adjust your volume.
+
+------------------------------
+consent
+------------------------------
+
+====================
+consent
+====================
+
+I consent
+
+====================
+consent_query
+====================
+
+Do you consent to participate in this study?
+
+====================
+consent_title
+====================
+
+University of Edinburgh Consent Form
+
+====================
+consent_form
+====================
+
+<b>Investigator:</b>  Elijah Gutierrez (University of Edinburgh) <br /><br />
+
+<b>What is this document?</b> This document explains what kind of study we’re doing, what your rights are, and what will be done with your data. You should print this page for your records.<br /><br />
+
+<b>Nature of the study</b>  You are invited to participate in a study which involves listening to some speech recordings carefully and answering questions about them. Once you finish, we will also have some optional questions about your experience (e.g., age, gender, language background). Your responses will be recorded. Your session should last for up to 20 minutes. You will be given full instructions shortly. <br /><br />
+
+<b>Compensation:</b> You will be paid £2 for your participation in this study.<br /><br />
+
+<b>Confidentiality and use of data</b> All the information we collect during the course of the research will be processed in accordance with Data Protection Law. In order to safeguard your privacy, we will never share personal information (like your name) with anyone outside the research team. Your data will be referred to by a unique participant number rather than by name. The anonymised data collected during this study will be used for research purposes. <br /><br />
+
+<b>What are my data protection rights?</b> The University of Edinburgh is a Data Controller for the information you provide.  You have the right to access information held about you. Your right of access can be exercised in accordance Data Protection Law. You also have other rights including rights of correction, erasure and objection.  For more details, including the right to lodge a complaint with the Information Commissioner’s Office, please visit www.ico.org.uk.  Questions, comments and requests about your personal data can also be sent to the University Data Protection Officer at dpo@ed.ac.uk. <br /><br />
+
+<b>Voluntary participation and the right to withdraw</b> Your participation is voluntary, and you may withdraw from the study at any time and for any reason. If you withdraw from the study during or after data gathering, we will delete your data and there is no penalty or loss of benefits to which you are otherwise entitled. You may stop at any time and for any reason simply by closing your browser window. If you stop participating, data collection will end, but data already collected will be retained. <br /><br />
+
+<b>Your right to ask questions at any time:</b>  If you have any questions about what you’ve just read, please feel free to ask, or contact us later. You can contact us by email at c.lai@ed.ac.uk.  This project has been approved by PPLS Ethics committee. If you have questions or comments regarding your rights as a participant, they can be contacted at 0131 650 4020 or ppls.ethics@ed.ac.uk.  <br /><br />
+
+<b>Giving consent to participate:</b> By digitally signing this consent form, you consent to the following: </br> <br><b>I agree to participate in this study.</b></br> <br><b>I confirm that I have read and understood how my data will be stored and used.</b></br> <br><b>I understand that I have the right to terminate this session at any point. If I choose to withdraw after completing the study, my data will be deleted at that time.</b></br> <br /><br />
+
+
+I have read and understand the above consent form, I certify that I am 18 years old or older and, by clicking the submit button to enter the survey, I indicate my willingness to voluntarily take part in the study.<br /><br />
+
+====================
+dissent
+====================
+
+I do not consent
+
+====================
+error_consent_or_dissent
+====================
+
+To continue you must either choose either to consent or to not consent.
+
+------------------------------
+media_list
+------------------------------
+
+====================
+memory_a
+====================
+
+A
+
+====================
+memory_b
+====================
+
+B
+
+====================
+memory_instruct
+====================
+
+Blaah
+
+------------------------------
+media_choice
+------------------------------
+
+====================
+different
+====================
+
+different
+
+====================
+neutral
+====================
+
+Neither
+
+====================
+one_play_two_response
+====================
+
+Same or different?<br />
+Press 'p' to play the audio; 'z' for the left response and 'm' for the right response.
+
+====================
+prominence_point_instr
+====================
+
+Please mark on a five point scale, the degree of prominence carried by the word marked in bold.
+
+====================
+prominence_video_instr
+====================
+
+How prominent is the most prominent word in this list?
+
+====================
+same
+====================
+
+same
+
+====================
+same_different_instr
+====================
+
+Are the two audio files the same or different?
+
+====================
+two_play_two_response
+====================
+
+Same or different?<br />
+Press 'q' for the left audio and 'p' for the right audio.\n<br />
+Press 'z' for the left response and 'm' for the right response.
+
+====================
+vnonprom
+====================
+
+Very nonprominent
+
+====================
+vprom
+====================
+
+Very prominent
+
+------------------------------
+fill_in_the_blank
+------------------------------
+
+====================
+fill_in_the_blank_instruct
+====================
+
+Please fill in the option that correctly completes this sentence.
+
+====================
+three_option_validation
+====================
+
+Error.  Please select one of the three options.
+
+------------------------------
+boundary_and_prominence
+------------------------------
+
+====================
+keyboard_shortcuts_boundary
+====================
+
+<font color="red">Boundary task.</font>  Press [p] to play the audio file and [enter] to continue
+
+====================
+keyboard_shortcuts_prominence
+====================
+
+<font color="blue">Prominence task.</font>  Press [p] to play the audio file and [enter] to continue
+
+====================
+mark_one_boundary
+====================
+
+Mark exactly one boundary.
+
+====================
+mark_one_prominence
+====================
+
+Mark exactly one prominence.
+
+====================
+pbMinMaxSelectedErrorMsg
+====================
+
+Error.  You must select at least %d word(s) but not more than %d word(s).
+
+====================
+true
+====================
+
+
+
+------------------------------
+boundary
+------------------------------
+
+====================
+boundary_at_most_one
+====================
+
+Mark at most one boundary.
+
+------------------------------
+prominence
+------------------------------
+
+====================
+prominence_at_least_two
+====================
+
+Mark at least two prominences.
+
+------------------------------
+syllable_marking
+------------------------------
+
+====================
+nonspecific_syllables
+====================
+
+Please mark the most prominent syllable in each word.
+
+------------------------------
+media_slider
+------------------------------
+
+====================
+prominence_scale_instr
+====================
+
+Slide the scale to indicate the degree of prominence you hear for the word in bold text.
+
+------------------------------
+end
+------------------------------
+
+====================
+test_complete
+====================
+
+You have reached the end of this study. Thank you for your participation. 
+<br /><br />
+If you are coming from Prolific, please enter the code 350E1295 to complete the study.
+<br /><br />
+Have a nice day!
+
+------------------------------
+login_bad_user_name
+------------------------------
+
+====================
+error_user_name_exists
+====================
+
+<font color="red"> ERROR: Username '%s' already exists or is invalid.  You may have already done this experiment, in which case you may not participate in it again. If you were forced to restart, use a similar name to your worker id (e.g. add a 1 to the end).</font>
+
+------------------------------
+media_test_end
+------------------------------
+
+====================
+mediaTest_no_audio
+====================
+
+You have indicated that you are unable to hear the audio file.  You are not
+able to participate in this experiment.  Thank you for your time.
+
+------------------------------
+consent_end
+------------------------------
+
+====================
+consent_opt_out
+====================
+
+You have chosen not to participate in this study. Thank you for your time. 
+<br /><br />
+
+------------------------------
+boundary_and_prominence,boundary,prominence
+------------------------------
+
+====================
+nonspecific_boundary_instr
+====================
+
+Mark a boundary between words <font color="red">that belong to different chunks</font>.
+
+------------------------------
+lmeds_interface,login,login_bad_user_name
+------------------------------
+
+====================
+back_button_warning
+====================
+
+<font color="red">Please note that pressing 'back' or 'refresh' will invalidate this experiment session.</font>
+
+------------------------------
+login,text_page,consent,login_bad_user_name
+------------------------------
+
+====================
+title
+====================
+
+Pilot Experiment
+
+------------------------------
+media_choice,media_slider
+------------------------------
+
+====================
+nonprominent
+====================
+
+Nonprominent
+
+====================
+prominent
+====================
+
+Prominent
+
+------------------------------
+boundary_and_prominence,prominence,boundary
+------------------------------
+
+====================
+error_marker_reminder
+====================
+
+<b>Click on the words in the sentence</b> where the intonation of the speaker does not sound correct. If you feel that the intonation is already correct, you don't have to mark a word. <b>You can play the audio up to 3 times</b>.
+
+====================
+error_marker_reminder_test_1
+====================
+
+In this case, the intonation is generally monotonous and the word 'today' has falling intonation when it should have rising intonation. 
+'Today' should therefore be marked at the very least, and if you think some of the other words in the utterance are odd to listen to, you should mark them too.
+For the tickboxes, I would tick 'Unexpected intonation' and maybe 'Lacking intonation' but of course this might be different to what you have in mind!
+You should then rate how natural you think the speaker sounds from a scale of 1 to 5 on the slider below. 
+
+====================
+error_marker_reminder_test_2
+==================== 
+
+In this case, 'before' at the end of the utterance does not sound like an exclamation. So, 'before' should be marked. 
+For the tickboxes, I would tick 'Unexpected intonation'. 
+
+====================
+error_marker_reminder_test_3
+====================
+
+In this case, the first vowel in 'boyhood' is too long, and while 'now' at the end of the utterance does have rising intonation, it sounds abrupt and unnatural. 
+Thus, 'boyhood' and 'now' should be marked at the very least. For the tickboxes, I would tick 'Unexpected intonation' and 'Abrupt change in pitch'.
+
+====================
+nonspecific_prominence_instr
+====================
+
+Mark the words that the speaker <font color="blue">highlighted for the listener, to make them stand out</font>.
+
+------------------------------
+prominence,boundary_and_prominence
+------------------------------
+
+====================
+pbMinSelectedErrorMsg
+====================
+
+Error.  You must select at least %d word(s).
+
+------------------------------
+login,login_bad_user_name
+------------------------------
+
+====================
+error_blank_name
+====================
+
+Please enter a unique user id.  No spaces please.  (e.g. k123l or john_doe_22)
+
+====================
+unsupported_warning
+====================
+
+====================
+user_name_text
+====================
+
+Please enter a unique user id.  No spaces please.  (e.g. k123l or john_doe_22)
+
+------------------------------
+media_test,media_list,media_choice,boundary_and_prominence,boundary,prominence,syllable_marking,media_slider
+------------------------------
+
+====================
+error_must_play_audio
+====================
+
+You must listen to each of the audio files at least %d time(s).
+
+====================
+error_must_play_audio_at_least
+====================
+
+You must listen to each of the audio files at least %d time(s).
+
+====================
+play_button
+====================
+
+Play
+
+------------------------------
+lmeds_interface,boundary_and_prominence
+------------------------------
+
+====================
+continue_button
+====================
+
+Continue
+
+------------------------------
+boundary,boundary_and_prominence
+------------------------------
+
+====================
+pbMaxSelectedErrorMsg
+====================
+
+Error. You must not select more than %d word(s).
+

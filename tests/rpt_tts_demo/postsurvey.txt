@@ -1,0 +1,27 @@
+
+If you can, please answer the following questions below. Note that these are optional, meaning you don't have to answer the questions you don't want to. 
+None
+
+Sex:
+Choice Male, Female
+
+Age:
+Textbox
+
+Do you have any problems with your hearing or vision?
+Textbox
+
+Do you have any speech problems?
+Textbox
+
+What language(s) do you speak natively?
+Textbox
+
+Have you ever taken a linguistics course?
+Choice Yes, No
+
+Were there loud noises or other distractions while you performed the experiment?
+Choice Yes, No
+
+What did you think of this test? Was it difficult/tiring? Did you encounter any technical issues during the test? Any feedback you have would be greatly appreciated.
+Multiline_Textbox 50, 7
