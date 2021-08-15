@@ -95,7 +95,7 @@ if (e.which == %d) {document.getElementById("submitButton").click();}
 """
 
 submitButtonHTML = ('<input name="submitButton" id="submitButton" '
-                    'type="button" value="%s">'
+                    'type="button" value="%s" style="cursor: pointer">'
                     )
 
 
@@ -172,6 +172,63 @@ window.onload=function() {
 timer = new Timer()
 
 %s
+
+function setBubble(range, bubble, isTrad) {
+    const windowWidth = window.innerWidth
+    const rangeWidth = range.clientWidth
+    const ratio = (rangeWidth/windowWidth) * 100
+    const def = 3
+    const val = range.value;
+    const diff = val-def
+    const step = ratio/4 - (ratio/100)
+    bubble.innerHTML = val;
+
+    newPercent = (isTrad ? 50 : 45.5) + (diff*step)
+
+    // Sorta magic numbers based on size of the native UI thumb
+    bubble.style.left = (newPercent/100) * window.innerWidth
+}
+
+const rangeInput = document.getElementsByName('0')[0];
+const rangeInputTrad = document.getElementsByName('media_slider')[0];
+
+if (rangeInputTrad) {
+    const playButton = document.getElementById('button0')
+    const brk = document.createElement('br')
+    const outputTrad = document.createElement('output');
+    outputTrad.innerHTML = 3
+    outputTrad.style.textAlign = 'center'
+    outputTrad.style.width = '15px'
+    outputTrad.style.height = '15px'
+    outputTrad.style.backgroundColor = 'red'
+    outputTrad.style.color = 'white'
+    outputTrad.style.padding = '3px'
+    outputTrad.style.borderRadius = '50%%'
+    outputTrad.style.position = 'absolute'
+    outputTrad.style.left = '50%%'
+    const label_1 = rangeInputTrad.previousSibling
+    const label_2 = rangeInputTrad.nextSibling
+    playButton.parentNode.insertBefore(document.createElement('br'), playButton.nextSibling)
+    label_1.parentNode.insertBefore(document.createElement('br'), label_1.previousSibling)
+    label_2.parentNode.insertBefore(brk, label_2.nextSibling)
+    brk.parentNode.insertBefore(outputTrad, brk.nextSibling)
+    rangeInputTrad.addEventListener('input', function(){
+        setBubble(rangeInputTrad, outputTrad, true)
+    });
+    window.addEventListener('resize', function(){
+        setBubble(rangeInputTrad, outputTrad, true)
+    })
+} else {
+    const output = document.getElementsByTagName('output')[0]
+    rangeInput.addEventListener('input', function(){
+        setBubble(rangeInput, output, false)
+    });
+
+    window.addEventListener('resize', function(){
+        setBubble(rangeInput, output, false)
+    })
+}
+
 }
 
 """
@@ -219,7 +276,8 @@ def createSlidingScale(textList, i):
                       'min="%s" max="%s">')
     widgetTemplate %= (str(i), str(i), leftVal, rightVal)
     
-    return leftText + widgetTemplate + rightText, i + 1
+    return '<br/>' + leftText + '&nbsp;' * 5 + widgetTemplate + '&nbsp;' * 5 + rightText + '<br/>' + \
+    '<output style="text-align: center; width: 15px; height: 15px; background: red; color: white; padding: 3px; border-radius: 50%; position: absolute; left: 45.5%" for="0" onforminput="value = 0.valueAsNumber;">3</output>', i + 1 
     
 
 def createTextbox(i):

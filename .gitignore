@@ -31,3 +31,15 @@ var/
 
 *.project
 *.pydevproject
+
+.cache/
+.ipython/
+.julia/
+.jupyter/
+.matplotlib/
+.python_history
+.vscode/
+Library/
+tests/
+lmeds/user_scripts/
+cgi-bin/

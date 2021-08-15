@@ -15,6 +15,7 @@ from lmeds.utilities import constants
 from lmeds.utilities import utils
 from lmeds.lmeds_io import loader
 from lmeds.pages import abstract_pages
+from lmeds.pages.assorted_experiment_pages import SurveyPage
 
 
 def _doBreaksOrProminence(testType, wordIDNum, audioNum, name, textNameStr,
@@ -156,7 +157,7 @@ def _getKeyPressEmbed(playID, submitID, doBoundariesAndProminences=False):
 class BoundaryOrProminenceAbstractPage(abstract_pages.AbstractPage):
     
     def __init__(self, name, transcriptName, minPlays, maxPlays,
-                 instructions, presentAudio="true", boundaryToken=None,
+                 instructions, embeddedSurveyName, presentAudio="true", boundaryToken=None,
                  doProminence=True, syllableDemarcator=None,
                  bindPlayKeyID=None, bindSubmitID=None,
                  minNumSelected=-1, maxNumSelected=-1,
@@ -179,6 +180,7 @@ class BoundaryOrProminenceAbstractPage(abstract_pages.AbstractPage):
         self.transcriptName = transcriptName
         self.minPlays = minPlays
         self.maxPlays = maxPlays
+        self.embeddedSurveyName = embeddedSurveyName
         self.presentAudio = presentAudio
         self.boundaryToken = boundaryToken
         self.doProminence = doProminence
@@ -192,6 +194,8 @@ class BoundaryOrProminenceAbstractPage(abstract_pages.AbstractPage):
         self.wavDir = self.webSurvey.wavDir
         
         self.instructText = instructions
+
+        self.embedded_survey = SurveyPage(self.embeddedSurveyName, self.webSurvey)
         
         # Strings used in this page
         txtKeyList = []
@@ -273,13 +277,12 @@ class BoundaryOrProminenceAbstractPage(abstract_pages.AbstractPage):
         return numOutputs
         
     def getOutput(self, form):
-        
         try:
             retList = super(BoundaryOrProminenceAbstractPage,
-                            self).getOutput(form)
+                            self).getOutput(form) + ';SURVEY_RESULTS: {}'.format(self.embedded_survey.getOutput(form))
         except abstract_pages.KeyNotInFormError:
-            retList = ",".join(["0", ] * self.getNumOutputs())
-            
+            retList = ",".join(["0", ] * self.getNumOutputs()) + ';SURVEY_RESULTS: {}'.format(self.embedded_survey.getOutput(form))
+    
         return retList
         
     def getHTML(self):
@@ -320,6 +323,8 @@ class BoundaryOrProminenceAbstractPage(abstract_pages.AbstractPage):
         embedTxt += "\n\n"
         
         htmlTxt = html.makeNoWrap(htmlTxt)
+        htmlTxt += '<br/><br/><br/><br/>'
+        htmlTxt += self.embedded_survey._getHTMLTxt()[0]
         
         return htmlTxt, pageTemplate, {'embed': embedTxt}
 
