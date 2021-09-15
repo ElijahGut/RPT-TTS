@@ -180,7 +180,7 @@ function setBubble(range, bubble, isTrad) {
     const def = 3
     const val = range.value;
     const diff = val-def
-    const step = ratio/4 - (ratio/100)
+    const step = ratio/5 - (ratio/100)
     bubble.innerHTML = val;
 
     newPercent = (isTrad ? 50 : 45.5) + (diff*step)

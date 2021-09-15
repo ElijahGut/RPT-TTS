@@ -1,6 +1,13 @@
+# example run command: python3 gen_sequence.py libri_isolated DEMO_experiment slt oph tac (system order matters here!)
+# for Latin square: run this script 3 times for 3 groups, changing the order of the systems each time
+
 import os
 import re
 import sys
+
+st_name = sys.argv[1]
+seq_name = sys.argv[2]
+system_names = sys.argv[3:]
 
 def split_stimuli(st_name):
     f = open('./stimuli/{}.txt'.format(st_name), 'r')
@@ -28,41 +35,28 @@ def sort_stimuli(stimuli):
     final_sorted = [i for i in result if i != '']
     return final_sorted
 
-
-def write_sequence(seq_name):
+def write_sequence(seq_name, system_names):
     f = open('./sequence.txt', 'w')
     f.write('*{}\n'.format(seq_name))
-    f.write('login\n\nconsent consent_form\nsurvey presurvey\ntext_page remote_experiment_notice\nmedia_test audio test_loud\ntext_page error_marker_instructions\nprominence test_1_slt test_1 1 3 error_marker_reminder_test_1 pmos_question bindPlayKeyID=space\nprominence test_3_oph_loud test_2 1 3 error_marker_reminder_test_2 pmos_question bindPlayKeyID=space\n\
-prominence test_2_slt test_3 1 3 error_marker_reminder_test_3 pmos_question bindPlayKeyID=space\ntext_page error_marker_instructions_2\n\n<randomize>\n')
+    f.write('login\n\nconsent consent_form\nsurvey presurvey\ntext_page remote_experiment_notice\nmedia_test audio test_loud\ntext_page error_marker_instructions\nerror_mark test_1_slt test_1 1 3 error_marker_reminder_test_1 pmos_question bindPlayKeyID=space\nerror_mark test_3_oph_loud test_2 1 3 error_marker_reminder_test_2 pmos_question bindPlayKeyID=space\n\
+error_mark test_2_slt test_3 1 3 error_marker_reminder_test_3 pmos_question bindPlayKeyID=space\ntext_page error_marker_instructions_2\n\n<randomize>\n')
     stimuli = os.listdir('./txt')
     stimuli = [s for s in stimuli if 'test' not in s]
     sorted_stimuli = sort_stimuli(stimuli)
-    for i in range(len(sorted_stimuli)):
-        st_name = sorted_stimuli[i]
-        st_name = st_name.strip('.txt')
-        if i >= 0 and i < 10:
-            f.write('prominence {} {} 1 3 error_marker_reminder pmos_question bindPlayKeyID=space\n'.format(st_name+'_slt', st_name))
-        elif i >= 10 and i < 20:
-            f.write('prominence {} {} 1 3 error_marker_reminder pmos_question bindPlayKeyID=space\n'.format(st_name+'_oph', st_name))
-        elif i >= 20 and i < 30:
-            f.write('prominence {} {} 1 3 error_marker_reminder pmos_question bindPlayKeyID=space\n'.format(st_name+'_tac', st_name))
+    size_of_groups = int(len(sorted_stimuli)/len(system_names))
+    for i in range(len(system_names)):
+        sn = system_names[i]
+        idx = i*size_of_groups
+        group_stims = sorted_stimuli[idx:idx+size_of_groups]
+        final_group = [g.strip('.txt') for g in group_stims]
+        for st_name in final_group:
+            f.write('error_mark {} {} 1 3 error_marker_reminder pmos_question bindPlayKeyID=space\n'.format(st_name+'_{}'.format(sn), st_name))
     f.write('</randomize>\n\nsurvey postsurvey\n\nend\n')
     f.close()
 
-# TODO: make groups
-
-# ABC CAB BCA, 30 stimuli each, 3 systems: slt, oph, tac
-
 def main(st_name, seq_name):
     split_stimuli(st_name)
-    write_sequence(seq_name)
+    write_sequence(seq_name, system_names)
 
-st_name = sys.argv[1]
-seq_name = sys.argv[2]
 
 main(st_name, seq_name)
-
-# example run command: python3.7 gen_sequence.py libri_isolated PILOT_experiment
-
-
-

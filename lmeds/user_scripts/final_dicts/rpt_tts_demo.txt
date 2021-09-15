@@ -1,1 +1,0 @@
-{'libri_isolated_9_slt': ('libri_isolated_9_slt', 'The milk is very good.', [0, 1, 0, 0, 1], 3.0, [0, 0, 0, 0]), 'libri_isolated_19_oph': ('libri_isolated_19_oph', 'For once in a way, I proved a true prophet.', [0, 0, 0, 0, 0, 0, 0, 0, 1, 1], 2.0, [0, 0, 0, 1])}

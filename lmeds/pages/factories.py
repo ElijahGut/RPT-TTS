@@ -45,7 +45,7 @@ def loadPage(webSurvey, pageName, args=None, kargs=None):
                      core_pages.TextAndMediaPage,
                      boundary_pages.BoundaryAndProminencePage,
                      boundary_pages.BoundaryPage,
-                     boundary_pages.ProminencePage,
+                     boundary_pages.ErrorMarkPage,
                      boundary_pages.SyllableMarking
                      ]
 

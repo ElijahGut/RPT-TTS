@@ -338,13 +338,13 @@ class BoundaryPage(BoundaryOrProminenceAbstractPage):
         super(BoundaryPage, self).__init__(*args, **kargs)
     
     
-class ProminencePage(BoundaryOrProminenceAbstractPage):
+class ErrorMarkPage(BoundaryOrProminenceAbstractPage):
     
-    pageName = "prominence"
+    pageName = "error_mark"
     
     def __init__(self, *args, **kargs):
         kargs["doProminence"] = True
-        super(ProminencePage, self).__init__(*args, **kargs)
+        super(ErrorMarkPage, self).__init__(*args, **kargs)
 
 
 class SyllableMarking(BoundaryOrProminenceAbstractPage):

@@ -31,3 +31,7 @@ var/
 
 *.project
 *.pydevproject
+
+.matplotlib/
+.vscode/
+Library/
