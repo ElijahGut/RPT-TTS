@@ -1,3 +1,5 @@
+#!/bin/bash
+
 HOME=/Users/elijah/Code/DissCode/RPT-TTS/ # change this to root directory 
 TESTS=${HOME}tests/
 USERSCR=${HOME}lmeds/user_scripts/

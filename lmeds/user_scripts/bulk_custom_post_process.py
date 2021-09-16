@@ -9,10 +9,10 @@ import subprocess
 import numpy as np
 import pandas as pd
 
+exp_name = sys.argv[1]
+
 home_path = os.environ["HOME"] 
 test_path = os.environ["TESTS"]
-
-exp_name = sys.argv[1]
 
 stim_file = os.listdir(os.path.join(home_path, 'master_stimuli'))[0]
 sf = open(os.path.join(home_path, 'master_stimuli', stim_file,), 'r')

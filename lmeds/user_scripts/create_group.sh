@@ -1,13 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 # run source setup.sh before running this script!
 
 NAME=${1}
+AUD_EXT=${2}
 
-cp -rf ${TESTS}/rpt_tts_demo/ tests/${NAME}
-python3 ./lmeds/user_scripts/write_cgi.py ${NAME}
+cp -rf ${HOME}tests/rpt_tts_demo/ ${HOME}tests/${NAME}
+python3 ./lmeds/user_scripts/write_cgi.py ${NAME} ${AUD_EXT}
 
-cd ${TESTS}/${NAME}
+cd ${HOME}tests/${NAME}
 rm audio_and_video/*
 rm stimuli/*
 rm txt/*
