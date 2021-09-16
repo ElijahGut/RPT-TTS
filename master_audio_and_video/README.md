@@ -1,1 +1,1 @@
-Add your synthesised stimuli here!
+Add your synthesised audio stimuli here!
