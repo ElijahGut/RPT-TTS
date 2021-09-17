@@ -4,7 +4,6 @@
 # otherwise this script won't work
 
 import os
-import re
 import sys
 import ast
 import subprocess
