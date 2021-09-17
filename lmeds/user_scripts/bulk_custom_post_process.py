@@ -1,12 +1,13 @@
+# NOTE: run source setup.sh first!
+
 # NOTE: this script processes results across ALL listener groups. Make sure all the data has been collected,
-# otherwise this script won't work!
+# otherwise this script won't work
 
 import os
 import re
 import sys
 import ast
 import subprocess
-import numpy as np
 import pandas as pd
 
 exp_name = sys.argv[1]
