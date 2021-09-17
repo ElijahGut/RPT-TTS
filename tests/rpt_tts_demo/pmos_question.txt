@@ -1,7 +1,7 @@
 How natural is the speaker's intonation?
 Sliding_Scale 1, 5, Not natural at all, Perfectly natural
 
-Indicate the properties of the utterance that contributed most to your decision to mark the errors(s). 
+Indicate the properties of the utterance that contributed most to your decision to mark the error(s). 
 Item_List Awkward pause, Abrupt change in pitch, Unexpected intonation, Lacking intonation
 
 Other
