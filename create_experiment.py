@@ -38,10 +38,11 @@ def custom_copytree(src, dst, ftc=None, symlinks=False, ignore=None):
         if (ftc and os.path.splitext(item)[0] in ftc) or ftc == 'other':
             s = os.path.join(src, item)
             d = os.path.join(dst, item)
-            if os.path.isdir(s):
-                shutil.copytree(s, d, symlinks, ignore)
-            else:
-                shutil.copy2(s, d)
+            if 'README' not in s:
+                if os.path.isdir(s):
+                    shutil.copytree(s, d, symlinks, ignore)
+                else:
+                    shutil.copy2(s, d)
 
 def get_files_to_copy(e):
     raw_seq = open(os.path.join('tests', e, 'sequence.txt'))
