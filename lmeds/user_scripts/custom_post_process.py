@@ -98,7 +98,7 @@ def post_process(N):
         v = final_dict[k]
         scores = v[2]
         mos = np.mean(scores)
-        final_v = (v[0], v[1], mos, v[3])
+        final_v = (v[0], v[1], round(mos,2), v[3])
         final_dict[k] = final_v
 
     return final_dict
