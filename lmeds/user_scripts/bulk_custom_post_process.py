@@ -30,11 +30,12 @@ def stitch():
         subprocess.call(['python3', 'custom_post_process.py', g, N])
     fds = os.listdir('./final_dicts/')
     for fd in fds:
-        f = open(f'./final_dicts/{fd}', 'r')
-        final_dict_str = f.read()
-        final_dict = ast.literal_eval(final_dict_str)
-        final_dicts.update(final_dict)
-        f.close()
+        if 'gitignore' not in fd:
+            f = open(f'./final_dicts/{fd}', 'r')
+            final_dict_str = f.read()
+            final_dict = ast.literal_eval(final_dict_str)
+            final_dicts.update(final_dict)
+            f.close()
     # write to csv file
     fd_df = pd.DataFrame.from_dict(final_dicts).T
     fd_df.to_csv(f'./csvs_and_xlsx/{exp_name}.csv')
