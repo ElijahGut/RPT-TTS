@@ -24,7 +24,8 @@ Requirements
 ==============
 
 ``Python 3.3.*`` or above
-Bash 
+
+Bash
 
 Usage
 =========
