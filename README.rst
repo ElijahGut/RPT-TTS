@@ -41,6 +41,7 @@ Before using RPT-TTS, you will need:
 
 Stimulus file name: the stem of the stimulus file.
 Id: number of stimulus in the stimulus file (e.g. 15th entry has an id of 15). 
+System: a shorthand for the system used to synthesise the stimulus (e.g. "tac" for Tacotron or "fast" for FastPitch).
 
 e.g. suppose your stimulus file is called libri_isolated.txt, and you have three systems to evaluate: slt (Festival slt), oph (Ophelia), tac (Tacotron). Suppose also that the first sentence in the stimulus file is *Then Anders felt brave again.* Then the audio sample of the slt system for this stimulus (*Then Anders felt brave again*) should be denoted as libri_isolated_1_slt. For the tac system this would be libri_isolated_1_tac, and so on. 
 
@@ -63,11 +64,11 @@ Running create_experiment.py
 
 ``python3 create_experiment.py [EXPERIMENT_NAME] [EXPERIMENT_ALIAS] [STIMULUS_FILE_NAME] [AUDIO_EXTENSION] [SYSTEM_1] [SYSTEM_2] [SYSTEM_3] ...``
 
-``python3 create_experiment.py rpt_tts_demo DEMO_experiment libri_isolated mp3 slt oph tac``
+Example run: ``python3 create_experiment.py rpt_tts_demo DEMO_experiment libri_isolated mp3 slt oph tac``
 
 This script builds an experiment based on the stimulus file, the audio samples provided, and the systems to evaluate. The samples and systems are arranged in a Latin square design. 
 
-**TODO**
+The experiment alias is an alternate name for the experiment which will be used for the first line of the sequence file and as the name of various output folders (see LMEDS manual for details). The convention is to have a short version of the experiment name in uppercase followed by _experiment, e.g. DEMO_experiment. The audio extension argument can either be mp3 or wav, depending on the format of the audio samples. The final arguments are the shorthand system names. **These should match the shorthand system names that were used when naming the audio samples**.
 
 Running bulk_post_process.py
 ================
@@ -81,8 +82,13 @@ This script processes the data from all listener groups in the specified experim
 Installation
 ================
 
-Please see the manual for instructions on installing LMEDS on a server, running
-LMEDS on a local computer (no server required), or for using the included user scripts.
+Please see the manual for instructions on installing LMEDS on a server or running
+LMEDS on a local computer (no server required).
+
+Contact
+================
+
+Please feel free to contact s1740779@ed.ac.uk if you have any questions. 
 
 Citing RPT-TTS/LMEDS
 ===============
