@@ -9,7 +9,7 @@ RPT-TTS is a web platform for collecting error annotation data online for speech
 
 LMEDS was developed for conducting Rapid Prosody Transcription (RPT) annotations over the internet. RPT-TTS adapts LMEDS for text-to-speech (TTS) evaluation.
 
-RPT-TTS implements the experimental procedure that was initially used in: Gutierrez, E., Oplustil-Gallegos, P., Lai, C. (2021) Location, Location: Enhancing the Evaluation of Text-to-Speech synthesis using the Rapid Prosody Transcription Paradigm. Proc. 11th ISCA Speech Synthesis Workshop (SSW 11), 25-30, doi: 10.21437/SSW.2021-5. 
+RPT-TTS implements the experimental procedure that was used in: Gutierrez, E., Oplustil-Gallegos, P., Lai, C. (2021) Location, Location: Enhancing the Evaluation of Text-to-Speech synthesis using the Rapid Prosody Transcription Paradigm. Proc. 11th ISCA Speech Synthesis Workshop (SSW 11), 25-30, doi: 10.21437/SSW.2021-5.
 
 RPT-TTS builds upon the original LMEDS platform by:
 
@@ -45,7 +45,9 @@ System: a shorthand for the system used to synthesise the stimulus (e.g. "tac" f
 
 e.g. suppose your stimulus file is called libri_isolated.txt, and you have three systems to evaluate: slt (Festival slt), oph (Ophelia), tac (Tacotron). Suppose also that the first sentence in the stimulus file is *Then Anders felt brave again.* Then the audio sample of the slt system for this stimulus (*Then Anders felt brave again*) should be denoted as libri_isolated_1_slt. For the tac system this would be libri_isolated_1_tac, and so on. 
 
-Once all the audio samples follow this naming convention, follow these steps:
+Once all the audio samples conform to this naming convention, an experiment can be created. If a Latin square design is not required, replace the stimulus file in ``rpt_tts_demo/stimuli`` and the audio samples in ``rpt_tts_demo/audio_and_video`` with your own. Then, copy the ``./tests/rpt_tts_demo`` directory and refer to the LMEDS manual to customise specific parts of the experiment. The lmeds_demo directory provided may also help for understanding how LMEDS works.
+
+If a Latin square design is necessary, follow these steps:  
 
 1. Change the HOME path in setup.sh to the path of the cloned directory
 2. Run ``source setup.sh``
