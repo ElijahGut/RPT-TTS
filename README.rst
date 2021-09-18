@@ -9,7 +9,7 @@ RPT-TTS is a web platform for collecting error annotation data online for speech
 
 LMEDS was developed for conducting Rapid Prosody Transcription (RPT) annotations over the internet. RPT-TTS adapts LMEDS for text-to-speech (TTS) evaluation.
 
-RPT-TTS was initially used for: Gutierrez, E., Oplustil-Gallegos, P., Lai, C. (2021) Location, Location: Enhancing the Evaluation of Text-to-Speech synthesis using the Rapid Prosody Transcription Paradigm. Proc. 11th ISCA Speech Synthesis Workshop (SSW 11), 25-30, doi: 10.21437/SSW.2021-5. 
+RPT-TTS implements the experimental procedure that was initially used in: Gutierrez, E., Oplustil-Gallegos, P., Lai, C. (2021) Location, Location: Enhancing the Evaluation of Text-to-Speech synthesis using the Rapid Prosody Transcription Paradigm. Proc. 11th ISCA Speech Synthesis Workshop (SSW 11), 25-30, doi: 10.21437/SSW.2021-5. 
 
 RPT-TTS builds upon the original LMEDS platform by:
 
