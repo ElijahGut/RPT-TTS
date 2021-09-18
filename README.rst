@@ -33,7 +33,7 @@ Usage
 Before using RPT-TTS, you will need:
 
 - audio samples of synthetic speech in either mp3 or wav format;
-- a txt file containing all stimuli each on their own line
+- a txt file containing all the stimuli, each on their own line
 
 Installation
 ================
