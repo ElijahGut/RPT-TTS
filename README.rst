@@ -51,7 +51,7 @@ Once all the audio samples follow this naming convention, follow these steps:
 3. Place the audio samples in the master_audio_and_video folder
 4. Place the stimulus file in the master_stimuli folder
 5. Customise the consent form in english.txt. english.txt is the dictionary file and can be found in ``./tests/rpt_tts_demo``. For more details on the dictionary file, refer to the LMEDS manual. The relevant fields to modify are consent_title and consent_form
-6. (Optional): customise pmos_question.txt in the ``./tests/rpt_tts_demo`` folder. This is the question that will be shown to participants. e.g. How natural is the intonation of the speaker?
+6. (Optional): customise pmos_question.txt in the ``./tests/rpt_tts_demo`` folder. This is the question that will be shown to participants e.g. How natural is the intonation of the speaker?
 7. Run ``create_experiment.py`` (see Section 3)
 8. Run ``lmeds_local_server.py`` to test the experiments on your local machine. Refer to the LMEDS manual for more details
 9. Once all the data has been collected, run ``bulk_post_process.py`` (see Section 4)
