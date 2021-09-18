@@ -61,15 +61,22 @@ Once all the audio samples follow this naming convention, follow these steps:
 Running create_experiment.py
 ================
 
+``python3 create_experiment.py [EXPERIMENT_NAME] [EXPERIMENT_ALIAS] [STIMULUS_FILE_NAME] [AUDIO_EXTENSION] [SYSTEM_1] [SYSTEM_2] [SYSTEM_3] ...``
+
+``python3 create_experiment.py rpt_tts_demo DEMO_experiment libri_isolated mp3 slt oph tac``
+
 This script builds an experiment based on the stimulus file, the audio samples provided, and the systems to evaluate. The samples and systems are arranged in a Latin square design. 
 
 **TODO**
 
-
 Running bulk_post_process.py
 ================
 
-**TODO**
+``python3 bulk_post_process.py [EXPERIMENT_NAME]``
+
+Example run: ``python3 bulk_post_process.py rpt_tts_demo``
+
+This script processes the data from all listener groups in the specified experiment and compiles the data in both csv and xlsx formats. The outputs of the script can be found in the ``./lmeds/user_scripts/csvs_and_xlsx`` directory.
 
 Installation
 ================
