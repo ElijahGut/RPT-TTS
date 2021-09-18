@@ -40,7 +40,7 @@ Installation
 Please see the manual for instructions on installing LMEDS on a server, running
 LMEDS on a local computer (no server required), or for using the included user scripts.
 
-Citing LMEDS
+Citing RPT-TTS/LMEDS
 ===============
 
 If you use RPT-TTS and/or LMEDS in your research, please cite them like so:
