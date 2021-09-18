@@ -37,7 +37,7 @@ Before using RPT-TTS, you will need:
 
 **NB: The audio samples need to conform to the following naming convention**:
 
-**[STIMULUS FILE NAME]_[ID]_[SYSTEM]**
+``[STIMULUS FILE NAME]_[ID]_[SYSTEM]``
 
 Stimulus file name: the stem of the stimulus file.
 Id: number of stimulus in the stimulus file (e.g. 15th entry has an id of 15). 
