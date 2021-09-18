@@ -25,15 +25,50 @@ Requirements
 
 ``Python 3.3.*`` or above
 
-Bash
+Bash (if on Windows use Git Bash)
 
 Usage
 =========
 
 Before using RPT-TTS, you will need:
 
-- audio samples of synthetic speech in either mp3 or wav format;
-- a txt file containing all the stimuli, each on their own line
+- audio samples of synthetic speech from different systems in either mp3 or wav format;
+- A stimulus file. This is a txt file containing all the stimuli used for the experiment, each on their own line with no quotes.
+
+**NB: The audio samples need to conform to the following naming convention**:
+
+**[STIMULUS FILE NAME]_[ID]_[SYSTEM]**
+
+Stimulus file name: the stem of the stimulus file.
+Id: number of stimulus in the stimulus file (e.g. 15th entry has an id of 15). 
+
+e.g. suppose your stimulus file is called libri_isolated.txt, and you have three systems to evaluate: slt (Festival slt), oph (Ophelia), tac (Tacotron). Suppose also that the first sentence in the stimulus file is *Then Anders felt brave again.* Then the audio sample of the slt system for this stimulus (*Then Anders felt brave again*) should be denoted as libri_isolated_1_slt. For the tac system this would be libri_isolated_1_tac, and so on. 
+
+Once all the audio samples follow this naming convention, follow these steps:
+
+1. Change the HOME path in setup.sh to the path of the cloned directory
+2. Run ``source setup.sh``
+3. Place the audio samples in the master_audio_and_video folder
+4. Place the stimulus file in the master_stimuli folder
+5. Customise the consent form in english.txt. english.txt is the dictionary file and can be found in ``./tests/rpt_tts_demo``. For more details on the dictionary file, refer to the LMEDS manual. The relevant fields to modify are consent_title and consent_form
+6. (Optional): customise pmos_question.txt in the ``./tests/rpt_tts_demo`` folder. This is the question that will be shown to participants. e.g. How natural is the intonation of the speaker?
+7. Run ``create_experiment.py`` (see below)
+8. Run ``lmeds_local_server.py`` to test the experiments on your local machine. Refer to the LMEDS manual for more details
+9. Once all the data has been collected, run ``bulk_post_process.py`` (see below)
+
+
+Running create_experiment.py
+================
+
+This script builds an experiment based on the stimulus file, the audio samples provided, and the systems to evaluate. The samples and systems are arranged in a Latin square design. 
+
+**TODO**
+
+
+Running bulk_post_process.py
+================
+
+**TODO**
 
 Installation
 ================
