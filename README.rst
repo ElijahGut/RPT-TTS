@@ -13,9 +13,9 @@ RPT-TTS was initially used for: Gutierrez, E., Oplustil-Gallegos, P., Lai, C. (2
 
 RPT-TTS builds upon the original LMEDS platform by:
 
-- embedding multiple tasks in one page, namely the RPT and MOS tasks; 
-- adding support for Latin square design experiments;
-- showing the MOS slider value for the user
+- Embedding multiple tasks in one page, namely the RPT and MOS tasks; 
+- Adding support for Latin square design experiments;
+- Showing the MOS slider value for the user
 
 .. sectnum::
 .. contents::
@@ -32,7 +32,7 @@ Usage
 
 Before using RPT-TTS, you will need:
 
-- audio samples of synthetic speech from different systems in either mp3 or wav format;
+- Audio samples of synthetic speech from different systems in either mp3 or wav format;
 - A stimulus file. This is a txt file containing all the stimuli used for the experiment, each on their own line with no quotes.
 
 **NB: The audio samples need to conform to the following naming convention**:
@@ -52,9 +52,10 @@ Once all the audio samples follow this naming convention, follow these steps:
 4. Place the stimulus file in the master_stimuli folder
 5. Customise the consent form in english.txt. english.txt is the dictionary file and can be found in ``./tests/rpt_tts_demo``. For more details on the dictionary file, refer to the LMEDS manual. The relevant fields to modify are consent_title and consent_form
 6. (Optional): customise pmos_question.txt in the ``./tests/rpt_tts_demo`` folder. This is the question that will be shown to participants. e.g. How natural is the intonation of the speaker?
-7. Run ``create_experiment.py`` (see below)
+7. Run ``create_experiment.py`` (see Section 3)
 8. Run ``lmeds_local_server.py`` to test the experiments on your local machine. Refer to the LMEDS manual for more details
-9. Once all the data has been collected, run ``bulk_post_process.py`` (see below)
+9. Once all the data has been collected, run ``bulk_post_process.py`` (see Section 4)
+10. You are now ready to analyse the processed data generated in ``./lmeds/user_scripts/csvs_and_xlsx``!
 
 
 Running create_experiment.py
