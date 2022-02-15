@@ -90,7 +90,7 @@ LMEDS on a local computer (no server required).
 Contact
 ================
 
-Please feel free to contact s1740779@ed.ac.uk if you have any questions. 
+Please feel free to contact elijahjgutierrez99@gmail.com if you have any questions. 
 
 Citing RPT-TTS/LMEDS
 ===============
